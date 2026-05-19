@@ -55,6 +55,11 @@ a:hover { text-decoration: underline; color: #93bbfc; }
 .plan h2 { text-align: center; font-size: 20px; font-weight: 800; margin-bottom: 20px; background: linear-gradient(135deg, #a855f7, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
 .day { background: #0d0b1a; border-radius: 10px; padding: 16px; border: 1px solid #1a1230; }
+.day.free { background: #0a0815; border: 1px dashed #2a1a4a; }
+.day.free h3 .name { background: none; color: #4a3b6a; -webkit-text-fill-color: #4a3b6a; }
+.day.free li { color: #3a2b5a; }
+.day.free li::before { content: "○"; color: #3a2b5a; }
+.day.free .hours { color: #2a1a3a; }
 .day h3 { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
 .day .name { background: linear-gradient(135deg, #a855f7, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .day .rest { color: #fbbf24; }
@@ -156,64 +161,68 @@ a:hover { text-decoration: underline; color: #93bbfc; }
       <h3><span class="name">Day 1 - Sat</span></h3>
       <ul>
         <li class="done">P1: Arbitrum, SUI, Base, Hedera</li>
-        <li>P1: Aave/GHO, Linera, Miden</li>
+        <li class="done">P1: Aave/GHO, Linera, Miden</li>
+        <li class="done">P1: Inco, Vara, LitVM</li>
+        <li class="done">P1: KiiChain, Robinhood Chain</li>
         <li>Testnet transactions</li>
       </ul>
-      <div class="hours">🎯 3h - Heavy P1</div>
+      <div class="hours">🎯 4h - All P1 (12 projects)</div>
     </div>
-    <div class="day">
+    <div class="day free">
       <h3><span class="name">Day 2 - Sun</span></h3>
       <ul>
-        <li>P1: Inco, Vara, LitVM</li>
-        <li>P1: KiiChain, Robinhood Chain</li>
-        <li>Learn docs / tutorials</li>
+        <li>○ Free / Buffer</li>
+        <li>○ Rest / Family</li>
+        <li>○ Catch up if needed</li>
       </ul>
-      <div class="hours">🎯 3h - Heavy P1</div>
+      <div class="hours">🎯 Off</div>
     </div>
     <div class="day">
       <h3><span class="name">Day 3 - Mon</span></h3>
       <ul>
-        <li>P2: GenLayer, Canopy, ARC</li>
-        <li>P2: Edgen, Overlayer, Stabilizer</li>
-        <li>P2: Into Space, Blockscout</li>
+        <li class="done">P2: GenLayer, Canopy, ARC</li>
+        <li class="done">P2: Edgen, Overlayer, Stabilizer</li>
+        <li class="done">P2: Into Space, Blockscout, Tempo</li>
+        <li class="done">P2: dFusion, Prismax, Concrete</li>
       </ul>
-      <div class="hours">🎯 3h - P2 Medium</div>
+      <div class="hours">🎯 4h - All P2 (15 projects)</div>
     </div>
-    <div class="day">
+    <div class="day free">
       <h3><span class="name">Day 4 - Tue</span></h3>
       <ul>
-        <li>P2: Tempo, dFusion, Prismax</li>
-        <li>P2: Concrete, SpiceNet, Netrun</li>
-        <li>P3: Check small projects</li>
+        <li>○ Free / Buffer</li>
+        <li>○ Rest / Family</li>
+        <li>○ Catch up if needed</li>
       </ul>
-      <div class="hours">🎯 3h - P2 + P3</div>
+      <div class="hours">🎯 Off</div>
     </div>
     <div class="day">
       <h3><span class="name">Day 5 - Wed</span></h3>
       <ul>
-        <li>Finish missed tasks</li>
-        <li>Update spreadsheet</li>
-        <li>Research new projects</li>
+        <li class="done">P2: SpiceNet, Netrun, Arkada</li>
+        <li class="done">P3: ADI, Bulk Trade, MeyHub</li>
+        <li class="done">P3: SimpleChain, Nemesis, Sumex</li>
+        <li class="done">P3: DAChain, X1, IOPN</li>
       </ul>
-      <div class="hours">🎯 2h - Catch-up</div>
+      <div class="hours">🎯 3h - Finish P2 + P3 (12 projects)</div>
     </div>
-    <div class="day">
+    <div class="day free">
       <h3><span class="name">Day 6 - Thu</span></h3>
       <ul>
-        <li>P1: Continue + checkpoints</li>
-        <li>Discord / Twitter engagement</li>
-        <li>Light day</li>
+        <li>○ Free / Buffer</li>
+        <li>○ Rest / Family</li>
+        <li>○ Catch up if needed</li>
       </ul>
-      <div class="hours">🎯 2h - Light P1</div>
+      <div class="hours">🎯 Off</div>
     </div>
     <div class="day">
       <h3><span class="name">Day 7 - Fri</span></h3>
       <ul>
-        <li>P1: Finish remaining P1 tasks</li>
-        <li>P2: Any pending P2 tasks</li>
-        <li>Weekly review + plan next week</li>
+        <li>P3: Unitflow, Netrun Faucet, SimpleChain</li>
+        <li>Weekly spreadsheet update</li>
+        <li>Plan next week</li>
       </ul>
-      <div class="hours">🎯 2h - Wrap up</div>
+      <div class="hours">🎯 2h - Wrap up + review</div>
     </div>
   </div>
 </div>
